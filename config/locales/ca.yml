@@ -1,0 +1,214 @@
+---
+ca:
+  activemodel:
+    attributes:
+      census16_authorization_handler:
+        date_of_birth: Data de naixement
+        document_number: Número de document
+        document_type: Tipus de document
+        gender: Sexe
+        postal_code: Codi postal
+        scope_id: Districte
+      census_authorization_handler:
+        date_of_birth: Data de naixement
+        document_number: Número de document
+        document_type: Tipus de document
+        gender: Sexe
+        postal_code: Codi postal
+        scope_id: Districte
+      confirmation:
+        verification_code: Codi de verificació
+      mobile_phone:
+        mobile_phone_number: Número de telèfon mòbil
+  census16_authorization:
+    form:
+      date_select:
+        day: Dia
+        month: Mes
+        year: Any
+      gender_help: Aquestes dades són voluntàries i es demanen en compliment d'allò
+        disposat a l'article 56 de la LLEI 17/2015, del 21 de juliol, d'igualtat efectiva
+        de dones i homes.
+      gender_prompt: Si us plau, selecciona una opció
+      genders:
+        man: Home
+        non_binary: No binari
+        woman: Dona
+      scope_prompt: Si us plau, selecciona el teu districte
+  census16_authorization_handler:
+    age_under: Has de ser major de %{min_age} anys per validar-te
+    invalid_document: El número de document, el tipus de document, la data de naixement
+      o el codi postal són incorrectes. Si us plau, revisa aquestes dades.
+  census_authorization:
+    form:
+      date_select:
+        day: Dia
+        month: Mes
+        year: Any
+      gender_help: Aquestes dades són voluntàries i es demanen en compliment d'allò
+        disposat a l'article 56 de la LLEI 17/2015, del 21 de juliol, d'igualtat efectiva
+        de dones i homes.
+      gender_prompt: Si us plau, selecciona una opció
+      genders:
+        man: Home
+        non_binary: No binari
+        woman: Dona
+      scope_prompt: Si us plau, selecciona el teu districte
+  census_authorization_handler:
+    age_under: Has de ser major de %{min_age} anys per validar-te
+    invalid_document: El número de document, el tipus de document, la data de naixement
+      o el codi postal són incorrectes. Si us plau, revisa aquestes dades.
+  decidim:
+    accessibility:
+      external_link: Link extern
+      front_page_link: Ves a la pàgina principal
+      logo: "Logo oficial de %{organization}"
+      skip_button: Salta i ves al contingut principal
+    accountability:
+      admin:
+        import_results:
+          new:
+            import: Import
+            title: Importar resultats des de CSV
+        imports:
+          create:
+            success: El fitxer ha començat a importar-se. Rebràs un email en els pròxims
+              minuts amb el resultat de l'importació
+        shared:
+          subnav:
+            import_csv: Importar CSV
+      import_mailer:
+        import:
+          errors: Errors
+          errors_present: Hi ha hagut algun problem amb l'importació de resultats
+          row_number: Fila
+          subject: L'importació de resultats ha finalitzat
+          success: L'importació de resultats ha finalitzat correctament. Pots revisar
+            els resultas en l'interfície d'administració.
+      results:
+        home_header:
+          csv_download: Descarregar dades en CSV
+    admin:
+      models:
+        initiatives_votes:
+          fields:
+            date_of_birth: Data de naixement
+            document_number: Número de document
+            hash: Hash
+            initiative_end_date: Data de finalització
+            initiative_id: ID
+            initiative_signatures_count: Nombre de signatures
+            initiative_start_date: Data d'inici
+            initiative_title: Títol
+            name_and_surname: Nom i cognoms
+            postal_code: Codi postal
+            time_and_date: Data i hora
+            timestamp: Segell
+    authorization_handlers:
+      census16_authorization_handler:
+        explanation: Verifica't amb el padró
+        fields:
+          date_of_birth: Data de naixement
+          document_number: Número de document
+          document_type: Tipus de document
+          gender: Sexe
+          postal_code: Codi postal
+          scope: Districte
+        name: El padró (majors de 16 anys)
+      census_authorization_handler:
+        explanation: Verifica't amb el padró
+        fields:
+          date_of_birth: Data de naixement
+          document_number: Número de document
+          document_type: Tipus de document
+          gender: Sexe
+          postal_code: Codi postal
+          scope: Districte
+        name: El padró
+    budgets:
+      projects:
+        budget_confirm:
+          description: Aquests són els projectes que has seleccionat i que estàs a
+            punt de votar.
+        budget_excess:
+          budget_excess:
+            description: Aquest projecte sobrepassa el pressupost màxim assignat al
+              districte i no es pot afegir. Si ho desitges, pots eliminar un projecte
+              ja seleccionat del districte per afegir aquest.
+        budget_summary:
+          cancel_order: eliminar el teu vot i començar a votar de nou
+          checked_out:
+            description: Ja has votat en aquest districte. Si has canviat d'idea,
+              pots %{cancel_link}.
+          minimum_projects_rule:
+            instruction: Selecciona <strong>com a mínim %{minimum_number} projectes</strong>
+              del districte i vota segons les teves preferències per a definir el
+              pressupost.
+        budgets_list:
+          voted_on: Has votat els projectes del Districte %{links}
+    census16_authorization_handler:
+      document_types:
+        dni: DNI
+        nie: NIE
+        passport: Passaport
+    census_authorization_handler:
+      document_types:
+        dni: DNI
+        nie: NIE
+        passport: Passaport
+    devise:
+      mailer:
+        confirmation_instructions:
+          instruction: 'Per participar al decidim.barcelona, has de confirmar el correu
+            electrònic del teu compte a través de l''enllaç següent:'
+      omniauth_registrations:
+        new:
+          nickname_help: El teu àlies (sobrenom) a %{organization}
+          tos_agreement: En registrar-te acceptes %{link}.
+      registrations:
+        new:
+          nickname_help: El teu àlies (sobrenom) a %{organization}
+          tos_agreement: En registrar-te acceptes %{link}.
+    ephemeral_participation:
+      actions:
+        verified: Si vols continuar participant al decidim.barcelona en futurs processos,
+          completa el teu registre %{link}
+    initiatives:
+      admin:
+        initiatives_types:
+          form:
+            child_scope_threshold_enabled_help: 'This config flag doesn''t support offline votes, it enables sub-scopes and works with an authorization handler that associates a scope to the user, make sure you select that authorization, bellow in authorization settings. For it to work scopes need to be configured in hierarchical way : 1 Parent - N Child. For more info on how this configuration works, see this <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.'
+            only_global_scope_enabled_help: Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, initiative type selection will be skipped in the initiative creation wizard. For more info on how this configuration works, see this <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
+      initiatives:
+        supports:
+          title: Llistat d'adhesions
+      initiative_signatures:
+        fill_personal_data:
+          document_hint: '* El número de document correspon al document utilizat en la verificació amb el padró (DNI, Passport o NIE).'
+    resource_links:
+      included_proposals:
+        project_proposals: 'Propostes incloses en aquest projecte:'
+    sms:
+      text: 'El teu codi per verificar-te a Decidim Barcelona és: %{code}'
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            census16_authorization_handler: Verifica't amb el padró (16+)
+            census_authorization_handler: Verifica't amb el padró
+            census_sms_authorization_handler: Verifica't amb el padró i el teu mòbil
+            valid_auth: Valid auth
+  layouts:
+    decidim:
+      initiative_header_steps:
+        signature_collection_period: Recollida de signatures
+  errors:
+    messages:
+      not_in_district: El codi postal no pertany al districte
+  menu:
+    accountability_static: Rendició de comptes
+  pages:
+    home:
+      extended:
+        debates_explanation: Espais per informar-te i decidir sobre les propostes
+          de cada procés.
